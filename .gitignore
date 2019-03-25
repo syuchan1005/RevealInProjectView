@@ -1,0 +1,12 @@
+.idea/
+.gradle/
+*.java~
+*.jar
+
+out/
+lib/
+build/
+
+*.ini
+!*.template.ini
+*.iml
