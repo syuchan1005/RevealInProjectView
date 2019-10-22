@@ -3,6 +3,15 @@
   <name>Reveal in Project View</name>
   <vendor email="syuchan.dev@gmail.com" url="https://syuchan1005.github.io">syuchan1005</vendor>
 
+  <description><![CDATA[
+Add [Reveal in Project View] in content menu.
+  ]]></description>
+
+  <change-notes><![CDATA[
+1.0.1: Add missing depends<br>
+1.0.0: Init Commit. 40 character is difficult.
+  ]]></change-notes>
+
   <depends>com.intellij.modules.lang</depends>
 
   <extensions defaultExtensionNs="com.intellij">
