@@ -1,17 +1,7 @@
 <idea-plugin>
   <id>com.github.syuchan1005.revealinprojectview</id>
   <name>Reveal in Project View</name>
-  <version>1.0.1</version>
   <vendor email="syuchan.dev@gmail.com" url="https://syuchan1005.github.io">syuchan1005</vendor>
-
-  <description>
-    Add [Reveal in Project View] in content menu.
-  </description>
-
-  <change-notes>
-    1.0.1: Add missing depends
-    1.0.0: Init Commit. 40 character is difficult.
-  </change-notes>
 
   <depends>com.intellij.modules.lang</depends>
 

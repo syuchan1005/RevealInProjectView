@@ -17,16 +17,19 @@ dependencies {
 // See https://github.com/JetBrains/gradle-intellij-plugin/
 intellij {
     version = "IC-2019.2.3"
+
 }
 
 configure<JavaPluginConvention> {
     sourceCompatibility = JavaVersion.VERSION_1_8
 }
 
-/*
 tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
+    description = "Add [Reveal in Project View] in content menu."
+    version("1.0.1")
+    untilBuild(null)
+    sinceBuild("173.0")
     changeNotes("""
-      Add change notes here.<br>
-      <em>most HTML tags may be used</em>""")
+1.0.1: Add missing depends<br>
+1.0.0: Init Commit. 40 character is difficult.""")
 }
-*/
