@@ -1,26 +1,19 @@
 <idea-plugin>
   <id>com.github.syuchan1005.revealinprojectview</id>
   <name>Reveal in Project View</name>
-  <version>1.0.0</version>
+  <version>1.0.1</version>
   <vendor email="syuchan.dev@gmail.com" url="https://syuchan1005.github.io">syuchan1005</vendor>
 
-  <description><![CDATA[
-      Add [Reveal in Project View] in content menu.
-    ]]></description>
+  <description>
+    Add [Reveal in Project View] in content menu.
+  </description>
 
-  <change-notes><![CDATA[
-      1.0.0: Init Commit. 40 character is difficult.
-    ]]>
+  <change-notes>
+    1.0.1: Add missing depends
+    1.0.0: Init Commit. 40 character is difficult.
   </change-notes>
 
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="173.0"/>
-
-  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
-       on how to target different products -->
-  <!-- uncomment to enable plugin in all products
   <depends>com.intellij.modules.lang</depends>
-  -->
 
   <extensions defaultExtensionNs="com.intellij">
     <!-- Add your extensions here -->
@@ -29,7 +22,8 @@
   <actions>
     <action id="RevealInProjectView"
             class="com.github.syuchan1005.revealinprojectview.RevealFileAction"
-            text="Reveal In ProjectView" description="Reveal in Project View">
+            text="Reveal In ProjectView"
+            description="Open current file in Project View">
       <add-to-group group-id="RevealGroup" anchor="last"/>
     </action>
   </actions>
