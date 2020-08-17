@@ -31,7 +31,7 @@ intellij {
 }
 
 tasks.getByName<org.jetbrains.intellij.tasks.PatchPluginXmlTask>("patchPluginXml") {
-    version("1.0.1")
+    version("1.0.2")
     untilBuild(null)
     sinceBuild("173.0")
 }
